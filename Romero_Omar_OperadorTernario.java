@@ -42,14 +42,16 @@ public class Romero_Omar_OperadorTernario {
 
         /*
         ejemplo con formula
-        En este ejemplo al introducir un numero, el codigo determinara si es par o impar.
-        Cabe agregar que en esta investigacion descubri que el 0 es par.
+        En este ejemplo usted introducira productos, si estos pasan de 5 se le aplicara un descuento del 10%.
          */
-        System.out.println("Ingrese un numero para determinar si es par o impar");
-        int numero = lea.nextInt();
-        String parimpar=(numero % 2==0) ? " es par" : " es impar";
-        System.out.println("El numero "+numero+parimpar);
-        
+        System.out.println("Ingrese cuantos productos desea comprar (estos tienen un valor de 10$), si estos son mas de 5 productos se le aplicara un 10% de descuento");
+        int productos = lea.nextInt();
+        if(productos>0){
+        double precio=(productos>5) ? (productos*10)-(productos*0.10) : productos*10;
+        System.out.println("Su total es de: "+precio+"$");
+        } else {
+            System.out.println("ERROR, introdujo una cantidad invalida");
+        }
         
 
     }
