@@ -1,1 +1,2 @@
 "# OperadoresTernarios" 
+"# Tarea2" 
